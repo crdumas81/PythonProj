@@ -98,3 +98,36 @@ else:
 
 print(name + "asks " + question)
 print('Magic 8-Ball\'s answer: ' + answer + ' using random number:' + str(random_number))
+
+# Shipping
+
+weight = 41.50
+ground_cost = 0.00
+premium_ground_cost = 125.00
+drone_cost = 0.00
+# ground shipping
+
+if weight <= 2:
+    ground_cost = (weight * 1.50) + 20.00
+elif weight >2 and weight <= 6:
+    ground_cost = (weight * 3.00) + 20.00
+elif weight >6 and weight <= 10:
+    ground_cost = (weight * 4.00) + 20.00
+else:
+    ground_cost = (weight * 4.75) + 20.00
+
+print('Cost to Ship by Ground:' + str(ground_cost))
+print('Premium costs are: ' + str(premium_ground_cost))
+# drone costs
+
+if weight <= 2:
+    drone_cost = (weight * 4.50)
+elif weight >2 and weight <= 6:
+    drone_cost = (weight * 9.00)
+elif weight >6 and weight <= 10:
+    drone_cost = (weight * 12.00)
+else:
+    drone_cost = (weight * 14.25)
+
+print('Cost to Ship by Drone:' + str(drone_cost))
+
