@@ -184,3 +184,6 @@ pizza_and_prices.insert(4,[2.5,"peppers"])
 
 three_cheapest = pizza_and_prices[0:3]
 print(three_cheapest)
+
+
+
